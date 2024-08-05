@@ -1,0 +1,147 @@
+.appointment-title {
+    font-weight: 600;
+    width: 100%;
+    font-size: 24px;
+    line-height: 54px;
+    justify-content: start;
+}
+.li-inner {
+    display: flex;
+    flex-direction: row;
+}
+.li-inner i {
+    display: none;
+    justify-content: end;
+    width: 40%;
+}
+
+.arrow-btn {
+    display: block;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.inactive-arrow {
+    display: none;
+    width: 0 !important;
+}
+
+.li-inner p {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+.active {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.appointment-menu {
+    display: flex;
+    justify-content: start;
+    width: 40%;
+}
+
+.appointment-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-category-block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+}
+
+.main-image-block {
+    display: flex;
+    height: 520px;
+    overflow: hidden;
+    width: 60%;
+}
+
+.main-category-block ul {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+}
+
+.main-category-block li {
+    background-color: #F1F1F1;
+    padding: 55px 20px 55px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sub-category-block, .third-category-block {
+    width: 25%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    display: none;
+}
+
+.sub-category-block ul, .third-category-block ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-category-block li, .third-category-block li {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.sub-category-block li:hover, .third-category-block li:hover {
+    background-color: #e2e2e2;
+}
+
+@media (max-width: 1400px) {
+    .li-inner i {
+        display: flex;
+    }
+    .appointment-menu {
+        width: 100% !important;
+        display: block;
+    }
+
+    .active > li {
+        margin: 10px 0 10px 0;
+    }
+
+    .sub-category-block,
+    .third-category-block {
+        display: none;
+        width: 100%;
+    }
+
+    .category-btn,
+    .sub-category-btn,
+    .third-category-btn {
+        cursor: pointer;
+        width: 100%;
+        display: block;
+    }
+
+    .main-image-block {
+        display: none;
+    }
+
+    .main-category-block ul {
+        width: 100%;
+    }
+    .main-category-block{
+        height: unset;
+    }
+}
+
